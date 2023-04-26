@@ -22,10 +22,17 @@
 
     <form action="excluir.php" method="post">
         Digite a matricula:
-        <input size="7" type="text" name="matricula">
-        <img onclick="Deletar();" src="saco-de-lixo.png" width="30px"
+        <input size="7" type="text" name="matricula" id=" matricula">
+        <img onclick="Deletar();" src="saco-de-lixo.png" width="30px">
 
     </form>
 </body>
+<script>
+    function Deletar()
+    {
+        M = matricula.value
+        window.open("excluir.php?M="+M,"_self")
+    }
+</script>
 
 </html>
